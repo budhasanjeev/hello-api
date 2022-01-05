@@ -1,0 +1,23 @@
+{
+  "name": "hello-api",
+  "version": "1.0.0",
+  "description": "Hello API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budhasanjeev/hello-api.git"
+  },
+  "keywords": [],
+  "author": "Sanjeev Budha <budhasanjeev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/budhasanjeev/hello-api/issues"
+  },
+  "homepage": "https://github.com/budhasanjeev/hello-api#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
