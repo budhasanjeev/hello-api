@@ -33,6 +33,24 @@ app.post("/approvalSync4", (req, res, next) => {
   }, 10000)
 });
 
+app.post("/approvalSync5", (req, res, next) => {
+  setTimeout(() => {
+    res.json("I am wake!! after 20000 ms");
+  }, 20000)
+});
+
+app.post("/approvalSync6", (req, res, next) => {
+  setTimeout(() => {
+    res.json("I am wake!! after 50000 ms");
+  }, 50000)
+});
+
+app.post("/approvalSync7", (req, res, next) => {
+  setTimeout(() => {
+    res.json("I am wake!! after 100000 ms");
+  }, 100000)
+});
+
 app.listen(port, () => {
   console.log('server running on port 3000', '');
 });
