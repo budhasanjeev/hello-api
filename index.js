@@ -5,6 +5,16 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+const cors = require('cors');
+app.use(
+  cors({
+      credentials: true,
+      origin: true
+  })
+);
+
+app.options('*', cors());
+
 app.get("/", (req, res) => {
   res.send("Hello API!");
 });
