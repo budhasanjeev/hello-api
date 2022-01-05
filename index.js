@@ -48,7 +48,17 @@ app.post("/approvalSync6", (req, res, next) => {
 app.post("/approvalSync7", (req, res, next) => {
   setTimeout(() => {
     res.json("I am wake!! after 100000 ms");
-  }, 100000)
+  }, 70000)
+});
+
+app.post("/approvalSync8", (req, res, next) => {
+  res.status(404);
+  res.send("Not Found");
+});
+
+app.post("/approvalSync9", (req, res, next) => {
+  res.status(503);
+  res.send("Service unavailable");
 });
 
 app.listen(port, () => {
