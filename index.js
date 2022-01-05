@@ -1,19 +1,9 @@
-const express = require('express')
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-const app = express()
-
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
-
-const cors = require('cors');
-app.use(
-  cors({
-      credentials: true,
-      origin: true
-  })
-);
-
-app.options('*', cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello API!");
@@ -43,6 +33,6 @@ app.post("/approvalSync4", (req, res, next) => {
   }, 10000)
 });
 
-app.listen(process.env.PORT || 3000, (err) => {
+app.listen(port, () => {
   console.log('server running on port 3000', '');
 });

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "npm install -f",
-    "heroku-postbuild": "npm run prod"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
   },
   "homepage": "https://github.com/budhasanjeev/hello-api#readme",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.2"
+  },
+  "engines": {
+    "node": "14.15.3"
   }
 }
