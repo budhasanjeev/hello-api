@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 
 app.post("/approvalSync", (req, res, next) => {
   res.status(200);
-  res.send(req.body);
+  res.send(req);
 });
 
 app.post("/approvalSync1", (req, res, next) => {
