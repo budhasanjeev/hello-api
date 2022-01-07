@@ -10,10 +10,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/approvalSync", (req, res, next) => {
-
-  console.log("request body: " + req.body);
   res.status(200);
-  res.send("OK");
+  res.send(req.body);
 });
 
 app.post("/approvalSync1", (req, res, next) => {
