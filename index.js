@@ -9,6 +9,13 @@ app.get("/", (req, res) => {
   res.send("Hello API!");
 });
 
+app.post("/approvalSync", (req, res, next) => {
+
+  console.log("request body: " + req.body);
+  res.status(200);
+  res.send("OK");
+});
+
 app.post("/approvalSync1", (req, res, next) => {
   setTimeout(() => {
     res.json("I am wake!! after 100ms ms");
